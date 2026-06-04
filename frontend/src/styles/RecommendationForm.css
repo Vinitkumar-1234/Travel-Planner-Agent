@@ -1,0 +1,89 @@
+.recommendation-form {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.recommendation-form h2 {
+  color: #667eea;
+  border-bottom: 3px solid #667eea;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+}
+
+.recommendation-form .card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+.recommendation-form .form-check {
+  padding: 8px 0;
+  transition: all 0.2s ease;
+}
+
+.recommendation-form .form-check:hover {
+  padding-left: 10px;
+}
+
+.recommendation-form .form-range {
+  margin-bottom: 10px;
+}
+
+.recommendations-content {
+  max-height: 500px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.recommendations-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.recommendations-content::-webkit-scrollbar-track {
+  background: #e0e0e0;
+  border-radius: 10px;
+}
+
+.recommendations-content::-webkit-scrollbar-thumb {
+  background: #667eea;
+  border-radius: 10px;
+}
+
+.recommendation-form .btn-primary {
+  border-radius: 10px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.recommendation-form .btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.recommendation-form .alert {
+  border-radius: 10px;
+  border: none;
+}
+
+@media (max-width: 992px) {
+  .recommendation-form .sticky-top {
+    position: static;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .recommendations-content {
+    max-height: 300px;
+  }
+}
